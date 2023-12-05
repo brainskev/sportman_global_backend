@@ -21,5 +21,12 @@ class MatchesController < ApplicationController
         else
             render :new
         end
-        
+    end
+
+    def edit
+        @match
+    end
+
+    
+
 end                 
