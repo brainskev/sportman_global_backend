@@ -34,6 +34,18 @@ class MatchesController < ApplicationController
             render :edit
         end
     end
-    
+
+    def destroy
+        @match.destroy
+        redirect_to matches_url, notice: 'Matche was succesfully destroyed.'
+    end
+
+    private
+
+    def set_match
+        @match = Match.find(params[:id])
+    end
+
+
 
 end                 
