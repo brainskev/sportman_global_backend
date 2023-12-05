@@ -27,6 +27,13 @@ class MatchesController < ApplicationController
         @match
     end
 
+    def update
+        if @match.update(match_params)
+            redirect_to @match, notice: 'Match was succesfully updated.'
+        else
+            render :edit
+        end
+    end
     
 
 end                 
