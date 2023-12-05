@@ -46,6 +46,8 @@ class MatchesController < ApplicationController
         @match = Match.find(params[:id])
     end
 
-
+    def match_params
+       params.require(:match).permit(:team1, :team2, :score_team1, :score_team1, score_team2, :date)
+    end
 
 end                 
