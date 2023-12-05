@@ -8,4 +8,9 @@ class MatchesController < ApplicationController
     def show
        @match
     end 
+
+    def new
+        @match = Match.new
+    end
+    
 end                 
