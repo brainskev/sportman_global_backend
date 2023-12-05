@@ -4,4 +4,8 @@ class MatchesController < ApplicationController
     def index
         @matches = Matche.all 
     end
-end
+
+    def show
+       @match
+    end 
+end                 
