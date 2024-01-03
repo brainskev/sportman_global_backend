@@ -1,0 +1,119 @@
+<div
+  id="home-calculator"
+  class="calculator home-calculator white_bg shadow_large dark_violet_border rounded30 pad20 mar-auto-rl mar0-r-large wow bounceInRight"
+  data-test="widget-get-price"
+>
+  <svg display="none">
+    <defs>
+      <g id="img-calculator-2">
+        <g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd">
+          <circle cx="21" cy="21" r="21" fill="#e9f6ff"></circle>
+          <path
+            fill="#2640a7"
+            fill-rule="nonzero"
+            d="M17.1689189,-1.15019105e-13 L2.08108108,-1.15019105e-13 C0.929983108,-1.15019105e-13 -5.44009282e-14,0.902487553 -5.44009282e-14,2.01955257 L-5.44009282e-14,22.4804474 C-5.44009282e-14,23.5975124 0.929983108,24.5 2.08108108,24.5 L17.1689189,24.5 C18.3200169,24.5 19.25,23.5975124 19.25,22.4804474 L19.25,2.01955257 C19.25,0.902487553 18.3200169,-1.15019105e-13 17.1689189,-1.15019105e-13 Z M16.3885135,17.1661968 L16.3885135,20.4608949 C16.3885135,21.3002714 15.692652,21.9755593 14.8277027,21.9755593 C13.9627534,21.9755593 13.2668919,21.3002714 13.2668919,20.4608949 L13.2668919,17.1661968 C13.2668919,16.3268203 13.9627534,15.6515324 14.8277027,15.6515324 C15.692652,15.6515324 16.3885135,16.3268203 16.3885135,17.1661968 Z M16.3885135,12.1173154 C16.3885135,12.9566919 15.692652,13.6319798 14.8277027,13.6319798 C13.9627534,13.6319798 13.2668919,12.9566919 13.2668919,12.1173154 C13.2668919,11.2779389 13.9627534,10.602651 14.8277027,10.602651 C15.692652,10.602651 16.3885135,11.2779389 16.3885135,12.1173154 Z M11.1858108,20.4608949 C11.1858108,21.3002714 10.4899493,21.9755593 9.625,21.9755593 C8.76005068,21.9755593 8.06418919,21.3002714 8.06418919,20.4608949 C8.06418919,19.6215183 8.76005068,18.9462304 9.625,18.9462304 C10.4899493,18.9462304 11.1858108,19.6215183 11.1858108,20.4608949 Z M11.1858108,16.2891051 C11.1858108,17.1284817 10.4899493,17.8037696 9.625,17.8037696 C8.76005068,17.8037696 8.06418919,17.1284817 8.06418919,16.2891051 C8.06418919,15.4497286 8.76005068,14.7744407 9.625,14.7744407 C10.4899493,14.7744407 11.1858108,15.4497286 11.1858108,16.2891051 Z M11.1858108,12.1173154 C11.1858108,12.9566919 10.4899493,13.6319798 9.625,13.6319798 C8.76005068,13.6319798 8.06418919,12.9566919 8.06418919,12.1173154 C8.06418919,11.2779389 8.76005068,10.602651 9.625,10.602651 C10.4899493,10.602651 11.1858108,11.2779389 11.1858108,12.1173154 Z M5.98310811,20.4608949 C5.98310811,21.3002714 5.28724662,21.9755593 4.4222973,21.9755593 C3.55734797,21.9755593 2.86148649,21.3002714 2.86148649,20.4608949 C2.86148649,19.6215183 3.55734797,18.9462304 4.4222973,18.9462304 C5.28724662,18.9462304 5.98310811,19.6215183 5.98310811,20.4608949 Z M5.98310811,16.2891051 C5.98310811,17.1284817 5.28724662,17.8037696 4.4222973,17.8037696 C3.55734797,17.8037696 2.86148649,17.1284817 2.86148649,16.2891051 C2.86148649,15.4497286 3.55734797,14.7744407 4.4222973,14.7744407 C5.28724662,14.7744407 5.98310811,15.4497286 5.98310811,16.2891051 Z M5.98310811,12.1173154 C5.98310811,12.9566919 5.28724662,13.6319798 4.4222973,13.6319798 C3.55734797,13.6319798 2.86148649,12.9566919 2.86148649,12.1173154 C2.86148649,11.2779389 3.55734797,10.602651 4.4222973,10.602651 C5.28724662,10.602651 5.98310811,11.2779389 5.98310811,12.1173154 Z M2.86148649,7.06843398 L2.86148649,4.03910513 C2.86148649,3.48372818 3.32972973,3.02932885 3.90202703,3.02932885 L15.347973,3.02932885 C15.9202703,3.02932885 16.3885135,3.48372818 16.3885135,4.03910513 L16.3885135,7.06843398 C16.3885135,7.62381094 15.9202703,8.07821026 15.347973,8.07821026 L3.90202703,8.07821026 C3.32972973,8.07821026 2.86148649,7.62381094 2.86148649,7.06843398 Z"
+            transform="translate(11.375 8.75)"
+          ></path>
+        </g>
+      </g>
+    </defs>
+  </svg>
+  <h3
+    class="text-semibold flex flex-ai-center mar5-t mar10-t-tablet mar0-t-large mar20-b pad5-t-tablet pad0-t-large pad10-b pad0-b-large"
+  >
+    Calculate the price <br class="hidden_768" />of <br class="hidden_1209" />
+    your order:
+    <svg
+      class="mar-auto-l"
+      width="48"
+      height="48"
+      viewBox="0 0 42 42"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      preserveAspectRatio="xMinYMin"
+    >
+      <use xlink:href="#img-calculator-2"></use>
+    </svg>
+  </h3>
+  <div data-calc-short="">
+    <form name="uvocalculator" method="get" action="/" data-calculator-form="">
+      <div
+        class="f_group assignment-type w100 mar20-b"
+        data-test="assignment-type"
+      >
+        <div class="f_select">
+          <select name="paperTypeId" data-academic-level-select=""></select>
+        </div>
+      </div>
+      <div class="f_group assignment-type w100 mar20-b">
+        <div class="f_select">
+          <select
+            name="academicLevelId"
+            data-academic-level-select-mobile=""
+          ></select>
+        </div>
+      </div>
+      <div
+        class="f_group pages w100 flex flex-ai-center flex-nowrap-large mar20-b"
+        data-test="number-of"
+      >
+        <div
+          class="f_label w100 w-auto-large flex flex-ai-center pad5-b pad0-b-tablet mar10-b mar0-b-large"
+        >
+          <label for="pages" class="label w100-large">
+            <span class="default dissertation" style="display: inline"
+              >Number of pages</span
+            >
+          </label>
+          <div
+            class="info-counter text-grey t12px mar5-t-large mar-auto-l mar0-l-large"
+            data-words-qty=""
+          >
+            275 words
+          </div>
+        </div>
+        <div class="spin_edit_wrapper w100 flex-shrink0">
+          <input
+            type="text"
+            name="pages"
+            value="2"
+            data-pages-input=""
+            class="spinedit noSelect"
+          />
+          <div class="spinedit">
+            <i class="icon-chevron-up plus" data-plus-button="">+</i>
+            <i class="icon-chevron-down minus" data-minus-button="">–</i>
+          </div>
+        </div>
+      </div>
+      <div class="f_group assignment-type w100 mar20-b">
+        <div class="f_select">
+          <select name="deadlineId" data-deadline-static=""></select>
+        </div>
+      </div>
+      <div class="f_total f_group w100 flex mar10-b">
+        <div class="text-grey t14px text-medium mar-auto-t mar5-b rez">
+          <span class="price per_page">Approximate price</span>
+        </div>
+        <span
+          class="total-price mar-auto-l mar-auto-t text-semibold t20px"
+          data-test="total-price"
+        >
+          <span class="flex flex-ai-baseline">
+            <span class="symbol" id="symbol">$</span>
+            <span class="total" id="total" data-total-price="">0.00</span>
+          </span>
+        </span>
+      </div>
+      <button
+        type="submit"
+        role="button"
+        class="content_button violet_button mar10-b mar0-b-large w100"
+        id="continue-to-order"
+        data-submit-button=""
+      >
+        Continue to order
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+<!-- 
+    Template Name: Blog Posts 
+-->
+
+
+<?php get_header(); ?>
+
+
+
+
+<div class="section haze old wf-section">
+    <div class="wrapper">
+        <div class="heading-count full">
+            <h1 class="heading-14"><?php the_title(); ?></h1>
+            <div class="divider animated-2"></div>
+        </div>
+        <div data-duration-in="300" data-duration-out="100" class="how_it w-tabs">
+            <div id="w-node-_65b7eb13-6bb3-3a98-8c03-9cb84a4b20c5-8969b66d" class="side-tabs w-tab-menu">
+                <a data-w-tab="Tab 1" id="tab-1" data-w-id="65b7eb13-6bb3-3a98-8c03-9cb84a4b20c6" style="" class="side-tab-new w-inline-block w-tab-link">
+                    <img src="<?php echo $redux_demo['first-hiw-step-image']['url']; ?>" width="46" height="46" loading="lazy" alt="" class="icon" />
+                    <div class="tab-info-right">
+                        <div class="h_3"><?php echo $redux_demo['first-hiw-step-heading']; ?></div>
+                        <div class="subtitle mob_hide"><?php echo $redux_demo['first-hiw-step-info']; ?></div>
+                    </div>
+                </a>
+                <a data-w-tab="Tab 2" id="tab-2" data-w-id="65b7eb13-6bb3-3a98-8c03-9cb84a4b20cd" style="" class="side-tab-new w-inline-block w-tab-link">
+                    <img src="<?php echo $redux_demo['second-hiw-step-image']['url']; ?>" width="46" height="46" loading="lazy" alt="" class="icon" />
+                    <div class="tab-info-right">
+                        <div class="h_3"><?php echo $redux_demo['second-hiw-step-heading']; ?></div>
+                        <div class="subtitle mob_hide"><?php echo $redux_demo['second-hiw-step-info']; ?></div>
+                    </div>
+                </a>
+                <a data-w-tab="Tab 3" id="tab-3" data-w-id="65b7eb13-6bb3-3a98-8c03-9cb84a4b20d4" style="" class="side-tab-new no-margin-bottom w-inline-block w-tab-link">
+                    <img src="<?php echo $redux_demo['third-hiw-step-image']['url']; ?>" width="46" height="46" loading="lazy" alt="" class="icon" />
+                    <div class="tab-info-right">
+                        <div class="h_3"><?php echo $redux_demo['third-hiw-step-heading']; ?></div>
+                        <div class="subtitle mob_hide"><?php echo $redux_demo['third-hiw-step-info']; ?></div>
+                    </div>
+                </a>
+            </div>
+            <div id="w-node-_65b7eb13-6bb3-3a98-8c03-9cb84a4b20db-8969b66d" class="side-media w-tab-content">
+                <div data-w-tab="Tab 1" id="tab-1" class="tab-pane-tab-1-2 w-tab-pane w--tab-active">
+                    <span class="lazyload w-inline-block ">
+                        <?php get_template_part('widgets/calc-short'); ?>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="section  old wf-section">
+    <div class="wrapper">
+
+        <div class="text_1">
+
+            <?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged=' . get_query_var('paged')); ?>
+
+            <?php if (have_posts()) : ?>
+
+                <?php while (have_posts()) : the_post(); ?>
+
+                    <div id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
+
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(200, 220)); ?></a>
+
+                        <div class="heading">
+                            <h2 class="h_3">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h2>
+                        </div>
+
+                        <span class="meta">author avatar <strong><?php the_time('F jS, Y'); ?></strong> / <strong><?php the_author_link(); ?></strong> / <span class="comments"><?php comments_popup_link(__('0 comments', 'example'), __('1 comment', 'example'), __('% comments', 'example')); ?></span></span>
+                        <div class="subtitle">
+
+                            <?php the_excerpt(__('Continue reading »', 'example')); ?>
+
+                        </div>
+                    </div><!-- /#post-<?php get_the_ID(); ?> -->
+
+                <?php endwhile; ?>
+
+                <div class="navigation">
+                    <span class="newer"><?php previous_posts_link(__('« Newer', 'example')) ?></span> <span class="older"><?php next_posts_link(__('Older »', 'example')) ?></span>
+                </div><!-- /.navigation -->
+
+            <?php else : ?>
+
+                <div id="post-404" class="noposts">
+
+                    <p><?php _e('None found.', 'example'); ?></p>
+
+                </div><!-- /#post-404 -->
+
+            <?php endif;
+            wp_reset_query(); ?>
+
+        </div>
+    </div>
+</div>
+
+<?php get_template_part('widgets/pro-our-features'); ?>
+
+<?php get_template_part('widgets/pro-faq'); ?>
+<?php get_template_part('widgets/pro-type'); ?>
+
+<?php get_template_part('widgets/pro-feedback'); ?>
+<?php get_template_part('widgets/cta-calc'); ?>
+
+
+<?php get_footer(); ?>
